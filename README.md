@@ -13,20 +13,27 @@ A minimal Next.js 14 demo covering:
 
 ## Setup
 
+### All-in-one (Docker)
+
+Starts PostGIS, installs npm dependencies, runs migrations, and starts the dev server:
+
 ```bash
-# Start PostGIS
-docker compose up -d
+docker compose up --build
+```
 
-# Install dependencies
+Then open tenant URLs on the host (port **3000** is published):
+
+- http://acme.localhost:3000
+- http://beta.localhost:3000
+
+### Local Node (database in Docker only)
+
+```bash
+docker compose up -d db
+
 npm install
-
-# Environment
 cp .env.example .env
-
-# Apply migration (enables PostGIS extension)
 npx prisma migrate deploy
-
-# Run dev server (custom server + Socket.io)
 npm run dev
 ```
 
