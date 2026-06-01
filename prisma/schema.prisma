@@ -1,0 +1,15 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// Placeholder so Prisma Client generates; geofence uses $queryRaw only.
+model SchemaAnchor {
+  id Int @id @default(1)
+
+  @@map("_schema_anchor")
+}

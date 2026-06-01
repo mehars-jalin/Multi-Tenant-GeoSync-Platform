@@ -1,0 +1,53 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  margin: 0;
+  padding: 2rem;
+  line-height: 1.5;
+  max-width: 40rem;
+}
+
+section {
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #ccc;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+h2 {
+  font-size: 1.1rem;
+  margin-top: 0;
+}
+
+label {
+  display: block;
+  margin-top: 0.5rem;
+}
+
+input {
+  margin-left: 0.5rem;
+}
+
+button {
+  margin-top: 0.75rem;
+  padding: 0.4rem 0.8rem;
+  cursor: pointer;
+}
+
+.error {
+  color: #b00020;
+}
+
+.inside {
+  color: #0a7;
+}
+
+.outside {
+  color: #666;
+}
